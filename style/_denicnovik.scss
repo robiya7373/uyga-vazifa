@@ -1,0 +1,173 @@
+.header {
+  &__navigation {
+    border-bottom: 1px solid #828282;
+  }
+  &__list {
+    @include dFlex;
+    padding: 33px 0;
+  }
+  &__link {
+    color: #828282;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 15px;
+    transition: all ease 0.3s;
+    &:first-child {
+      padding: 12px 0 12px 0;
+    }
+    &:hover {
+      color: var(--Black, #070707);
+      font-weight: 600;
+    }
+  }
+  .hero {
+    @include dFlex;
+    &__title {
+      color: var(--Black, #070707);
+      font-size: 47px;
+      line-height: normal;
+      font-weight: 800;
+    }
+    &__profession {
+      color: var(--Black, #070707);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &__lang {
+      color: #828282;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+      transform: rotate(270deg);
+      strong {
+        color: #070707;
+      }
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+.about {
+  background: #f6f6f6;
+  padding: 5rem;
+  margin: 5rem 0 0 0;
+  text-align: center;
+
+  &__title {
+    line-height: normal;
+    font-weight: 800;
+    font-size: 34px;
+    color: #070707;
+  }
+  &__subtitle {
+    color: var(--Black, #070707);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.skills {
+  text-align: center;
+
+  &__title {
+    line-height: normal;
+    font-weight: 800;
+    font-size: 34px;
+    color: #070707;
+    padding: 4rem;
+  }
+
+  &__subtitle {
+    color: var(--Black, #070707);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &__cards {
+    @include dFlex;
+    justify-content: space-around;
+    padding: 5rem;
+  }
+  &__adobe {
+    color: #828282;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.portfolio {
+  background: #f6f6f6;
+  padding: 4rem 0;
+  &__img {
+    @include dFlex;
+    padding: 3rem 0;
+  }
+
+  &__top {
+    @include dFlex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    gap: 4rem;
+  }
+  &__title {
+    line-height: normal;
+    font-weight: 800;
+    font-size: 34px;
+    color: #070707;
+  }
+
+  &__link {
+    color: var(--Black, #070707);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+}
+
+.footer {
+  padding: 5rem 0;
+  text-align: center;
+  &__title {
+    color: #070707;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  &__subtitle {
+    color: var(--Black, #070707);
+
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2rem 0;
+  }
+  &__btn {
+    color: #fff;
+    padding: 14px 25px;
+    background: #000;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__local {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+  }
+  &__end {
+    margin: 3rem 0;
+    color: rgba(0, 0, 0, 0.4745098039);
+  }
+}
